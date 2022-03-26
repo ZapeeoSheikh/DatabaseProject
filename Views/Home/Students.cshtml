@@ -1,0 +1,55 @@
+﻿@using MyWebProject.Models
+
+@model List<Student>
+<h2>Students Data</h2>
+
+<table class="table table-striped">
+    <tr>
+        <td>
+            ID
+        </td>
+
+        <td>
+            Name
+        </td>
+
+        <td>
+            Email
+        </td>
+
+        <td>
+            Phone
+        </td>
+    </tr>
+    <tr>
+
+        @foreach (var item in Model)
+        {
+            <td>@item.Id </td>
+
+        }
+
+
+        @foreach (var item in Model)
+        {
+            <td>@item.Name </td>
+
+        }
+
+        @foreach (var item in Model)
+        {
+            <td>@item.Email </td>
+
+        }
+
+        @foreach (var item in Model)
+        {
+            <td>@item.Phone </td>
+
+        }
+
+    </tr>
+</table>
+
+
+

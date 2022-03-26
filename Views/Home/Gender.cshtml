@@ -1,0 +1,34 @@
+﻿@using MyWebProject.Models
+
+@model List<Gender>
+
+<h2>Gender Sorting </h2>
+
+<table class="table table-striped">
+    <tr>
+        <td>
+            ID
+        </td>
+
+        <td>
+            Name
+        </td>
+
+    </tr>
+    <tr>
+
+        @foreach (var item in Model)
+        {
+            <td>@item.Id </td>
+
+        }
+
+
+        @foreach (var item in Model)
+        {
+            <td>@item.Name </td>
+
+        }
+
+    </tr>
+</table>

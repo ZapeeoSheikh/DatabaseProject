@@ -1,0 +1,54 @@
+﻿@using MyWebProject.Models
+
+@model List<Enrollment>
+
+<h2>Enrollments Details </h2>
+
+<table class="table table-striped">
+    <tr>
+        <td>
+            ID
+        </td>
+
+        <td>
+            Student ID
+        </td>
+
+        <td>
+            Course ID
+        </td>
+
+        <td>
+            Joining Date
+        </td>
+
+
+    </tr>
+    <tr>
+
+        @foreach (var item in Model)
+        {
+            <td>@item.Id </td>
+
+        }
+
+        @foreach (var item in Model)
+        {
+            <td>@item.StudentId </td>
+
+        }
+
+        @foreach (var item in Model)
+        {
+            <td>@item.CourseId </td>
+
+        }
+        @foreach (var item in Model)
+        {
+            <td>@item.JoinOndate </td>
+
+        }
+
+
+    </tr>
+</table>
