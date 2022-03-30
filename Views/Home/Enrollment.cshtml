@@ -4,7 +4,7 @@
 
 <h2>Enrollments Details </h2>
 
-<table class="table table-striped">
+<table class="table table-striped table-bordered col-lg-push-6">
     <tr>
         <td>
             ID
@@ -24,31 +24,23 @@
 
 
     </tr>
-    <tr>
 
-        @foreach (var item in Model)
-        {
-            <td>@item.Id </td>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.StudentId
+            </td>
+            <td>
+                @item.CourseId
+            </td>
+            <td>
+                @item.JoinOndate
+            </td>
 
-        }
-
-        @foreach (var item in Model)
-        {
-            <td>@item.StudentId </td>
-
-        }
-
-        @foreach (var item in Model)
-        {
-            <td>@item.CourseId </td>
-
-        }
-        @foreach (var item in Model)
-        {
-            <td>@item.JoinOndate </td>
-
-        }
-
-
-    </tr>
+        </tr>
+    }
 </table>

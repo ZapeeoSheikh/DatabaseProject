@@ -11,35 +11,29 @@
         </td>
 
         <td>
-            Cnic Number
-        </td>
-
-        <td>
             Student ID
         </td>
 
-    </tr>
-    <tr>
-
-        @foreach (var item in Model)
-        {
-            <td>@item.Id </td>
-
-        }
-
-
-        @foreach (var item in Model)
-        {
-            <td>@item.CnicNumber </td>
-
-        }
-
-        @foreach (var item in Model)
-        {
-            <td>@item.StudentId </td>
-
-        }
+        <td>
+            Cnic Number
+        </td>
 
 
     </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.StudentId
+            </td>
+            <td>
+                @item.CnicNumber
+            </td>
+
+        </tr>
+    }
 </table>

@@ -15,39 +15,30 @@
         </td>
 
         <td>
-            Course
+            Cost
         </td>
 
         <td>
             Description
         </td>
     </tr>
-    <tr>
 
-        @foreach (var item in Model)
-        {
-            <td>@item.Id </td>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Cost
+            </td>
+            <td>
+                @item.Description
+            </td>
 
-        }
-
-
-        @foreach (var item in Model)
-        {
-            <td>@item.Name </td>
-
-        }
-
-        @foreach (var item in Model)
-        {
-            <td>@item.Cost </td>
-
-        }
-
-        @foreach (var item in Model)
-        {
-            <td>@item.Description </td>
-
-        }
-
-    </tr>
+        </tr>
+    }
 </table>

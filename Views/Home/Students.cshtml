@@ -21,34 +21,25 @@
             Phone
         </td>
     </tr>
-    <tr>
 
-        @foreach (var item in Model)
-        {
-            <td>@item.Id </td>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.Phone
+            </td>
 
-        }
-
-
-        @foreach (var item in Model)
-        {
-            <td>@item.Name </td>
-
-        }
-
-        @foreach (var item in Model)
-        {
-            <td>@item.Email </td>
-
-        }
-
-        @foreach (var item in Model)
-        {
-            <td>@item.Phone </td>
-
-        }
-
-    </tr>
+        </tr>
+    }
 </table>
 
 

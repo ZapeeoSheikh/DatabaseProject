@@ -223,6 +223,18 @@
     <Compile Include="Migrations\202203261043562_mytest.designer.cs">
       <DependentUpon>202203261043562_mytest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203301508417_test.cs" />
+    <Compile Include="Migrations\202203301508417_test.designer.cs">
+      <DependentUpon>202203301508417_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203301510484_test1.cs" />
+    <Compile Include="Migrations\202203301510484_test1.designer.cs">
+      <DependentUpon>202203301510484_test1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203301633371_test2.cs" />
+    <Compile Include="Migrations\202203301633371_test2.designer.cs">
+      <DependentUpon>202203301633371_test2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CnicDetails.cs" />
     <Compile Include="Models\Course.cs" />
@@ -267,6 +279,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203261043562_mytest.resx">
       <DependentUpon>202203261043562_mytest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203301508417_test.resx">
+      <DependentUpon>202203301508417_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203301510484_test1.resx">
+      <DependentUpon>202203301510484_test1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203301633371_test2.resx">
+      <DependentUpon>202203301633371_test2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
