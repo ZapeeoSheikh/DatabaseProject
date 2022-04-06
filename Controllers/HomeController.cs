@@ -165,6 +165,7 @@ namespace MyWebProject.Controllers
         public ActionResult CEEdit(CnicDetails cnicDetails)
         {
             CnicDetails dbCnicDetails = db.CnicDetails.Where(x => x.Id == cnicDetails.Id).FirstOrDefault();
+            dbCnicDetails.StudentId = cnicDetails.StudentId;
             dbCnicDetails.CnicNumber = cnicDetails.CnicNumber;
 
             db.SaveChanges();
