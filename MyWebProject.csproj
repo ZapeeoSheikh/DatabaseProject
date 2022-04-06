@@ -102,6 +102,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\avatar.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
@@ -235,6 +236,10 @@
     <Compile Include="Migrations\202203301633371_test2.designer.cs">
       <DependentUpon>202203301633371_test2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204061438595_finaltest.cs" />
+    <Compile Include="Migrations\202204061438595_finaltest.designer.cs">
+      <DependentUpon>202204061438595_finaltest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CnicDetails.cs" />
     <Compile Include="Models\Course.cs" />
@@ -257,6 +262,16 @@
     <Content Include="Views\Home\Gender.cshtml" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
+    <Content Include="Views\Home\SView.cshtml" />
+    <Content Include="Views\Home\EView.cshtml" />
+    <Content Include="Views\Home\CView.cshtml" />
+    <Content Include="Views\Home\CDView.cshtml" />
+    <Content Include="Views\Home\GView.cshtml" />
+    <Content Include="Views\Home\SEdit.cshtml" />
+    <Content Include="Views\Home\GEdit.cshtml" />
+    <Content Include="Views\Home\EEdit.cshtml" />
+    <Content Include="Views\Home\CEdit.cshtml" />
+    <Content Include="Views\Home\CEEdit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -288,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203301633371_test2.resx">
       <DependentUpon>202203301633371_test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204061438595_finaltest.resx">
+      <DependentUpon>202204061438595_finaltest.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

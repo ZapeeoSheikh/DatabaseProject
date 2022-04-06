@@ -1,0 +1,25 @@
+﻿@using MyWebProject.Models
+@model CnicDetails
+@{
+    ViewBag.Title = "CEEdit";
+}
+
+
+<div class="container col-lg-3 col-lg-push-3">
+    <div class="panel  panel-primary ">
+        <div class="panel-heading">
+            Edit Cnic Details @Model.Id
+        </div>
+        <div class="panel-body ">
+            <form action="/Home/CEEdit" method="post">
+                <input type="hidden" value="@Model.Id">
+                <div class="form-group">
+                    <label for="email"> Cnic Number :</label>
+                    <input type="text" class="form-control" id="email" name="Name" value="@Model.CnicNumber">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Add Now</button>
+            </form>
+        </div>
+    </div>
+</div>

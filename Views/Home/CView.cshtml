@@ -1,0 +1,38 @@
+﻿@using MyWebProject.Models
+@model Course
+@{
+    ViewBag.Title = "CView";
+}
+
+
+<div class="panel panel-primary container-fluid col-lg-3 col-lg-push-3">
+    <div class="panel-heading">@Model.Title Course Details</div>
+    <div class="panel-body ">
+
+        <div class="col-lg-push-1" style="padding: 0px 0px 10px 10px">
+            <img src="~/images/avatar.jpg" style="height: 250px; width: 250px " />
+            <div style="padding: 10px 0px 0px 0px ">
+                <p>
+                    Course Title : <b>
+                        @Model.Title
+                    </b>
+                </p>
+                <p>
+                    Course Id :  <b>
+                        @Model.Id
+                    </b>
+                </p>
+                <p>
+                    Course Cost : <b>@Model.Cost</b>
+                </p>
+                <p>
+                    Description : <b>@Model.Description</b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

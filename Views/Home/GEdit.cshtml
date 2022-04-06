@@ -1,0 +1,29 @@
+﻿@using MyWebProject.Models
+@model Gender
+
+<h2>Gender Edit</h2>
+
+
+
+<div class="container col-lg-3 col-lg-push-3">
+    <div class="panel  panel-primary ">
+        <div class="panel-heading">
+            Edit Gender @Model.Id
+        </div>
+        <div class="panel-body ">
+            <form action="/Home/GEdit" method="post">
+                <input type="hidden" value="@Model.Id">
+                <div class="form-group">
+                    <label for="email"> Name :</label>
+                    <input type="text" class="form-control" id="email" name="Name" value="@Model.Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Gender :</label>
+                    <input type="text" class="form-control" id="email" name="Email" value="@Model.Genderr">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Edit Now</button>
+            </form>
+        </div>
+    </div>
+</div>

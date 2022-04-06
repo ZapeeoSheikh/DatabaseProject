@@ -1,0 +1,38 @@
+﻿@using MyWebProject.Models
+@model Enrollment
+@{
+    ViewBag.Title = "EView";
+}
+
+
+<div class="panel panel-primary container-fluid col-lg-3 col-lg-push-3">
+    <div class="panel-heading">Student @Model.StudentId Details</div>
+    <div class="panel-body ">
+
+        <div class="col-lg-push-1" style="padding: 0px 0px 10px 10px">
+            <img src="~/images/avatar.jpg" style="height: 250px; width: 250px " />
+            <div style="padding: 10px 0px 0px 0px ">
+                <p>
+                    Student ID : <b>
+                        @Model.StudentId
+                    </b>
+                </p>
+                <p>
+                    Course ID : <b>
+                        @Model.CourseId
+                    </b>
+                </p>
+                <p>
+                    Joining Date :  <b>
+                        @Model.JoinOndate
+                    </b>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

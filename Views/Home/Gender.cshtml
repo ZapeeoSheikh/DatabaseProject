@@ -1,40 +1,49 @@
 ﻿@using MyWebProject.Models
-@using System.Configuration
 @model List<Gender>
 
+<h2>Gender Details </h2>
 
 
 <table class="table table-striped table-bordered col-lg-push-6">
     <thead>
         <tr>
-            <td>
+            <th>
                 ID
-            </td>
+            </th>
 
-            <td>
+            <th>
                 Name
-            </td>
-            <td>
+            </th>
+            <th>
                 Gender
-            </td>
+            </th>
+            <th>
+                Action
+            </th>
 
         </tr>
     </thead>
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @item.Id
-            </td>
-            <td>
-                @item.Name
-            </td>
-            <td>
-                @item.Genderr
-            </td>
-
-        </tr>
+        <tbody>
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Genderr
+                </td>
+                <td>
+                    <a href="/Home/GView/@item.Id"><span class="glyphicon glyphicon-eye-open"></span></a> |
+                    <a href="/Home/GEdit/@item.Id"><span class="glyphicon glyphicon-edit"></span></a> |
+                    <a href="/Home/GDelete/@item.Id"><span class="glyphicon glyphicon-trash"></span></a>
+                </td>
+            </tr>
+        </tbody>
     }
 
 
