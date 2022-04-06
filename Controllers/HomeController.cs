@@ -134,6 +134,15 @@ namespace MyWebProject.Controllers
             db.SaveChanges();
             return Redirect("/Home/Enrollment");
         }
+        [HttpGet]
+        public ActionResult CEdit(int Id)
+        {
+            Course course = db.Courses.Where(x => x.Id == Id).FirstOrDefault();
+
+            db.SaveChanges();
+            return View(course);
+        }
+        [HttpPost]
         public ActionResult CEdit(Course course)
         {
             Course dbcourse = db.Courses.Where(x => x.Id == course.Id).FirstOrDefault();
@@ -144,6 +153,15 @@ namespace MyWebProject.Controllers
             db.SaveChanges();
             return Redirect("/Home/Course");
         }
+        [HttpGet]
+        public ActionResult CEEdit(int Id)
+        {
+            CnicDetails cnicDetails = db.CnicDetails.Where(x => x.Id == Id).FirstOrDefault();
+
+            db.SaveChanges();
+            return View(cnicDetails);
+        }
+        [HttpPost]
         public ActionResult CEEdit(CnicDetails cnicDetails)
         {
             CnicDetails dbCnicDetails = db.CnicDetails.Where(x => x.Id == cnicDetails.Id).FirstOrDefault();
