@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MyWebProject.Models
 {
-    public class Register
+    public class User
     {
         public int Id { get; set; }
         public string Name { get; set; }

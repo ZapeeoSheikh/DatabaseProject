@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -22,12 +23,15 @@ namespace MyWebProject.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Register(Register register)
+        public ActionResult Register(User user)
         {
-
+            user.RoleId = 2;
+            user.AccessToken = DateTime.UtcNow.Ticks.ToString();
+            db.Users.Add(user);
             db.SaveChanges();
-            return Redirect("/Product/Register");
+            return Redirect("/Product/Index");
         }
+        [HttpGet]
         public ActionResult Login()
         {
 
@@ -37,7 +41,6 @@ namespace MyWebProject.Controllers
         public ActionResult Login(Login login)
         {
 
-            db.SaveChanges();
             return Redirect("/Product/Login");
         }
     }

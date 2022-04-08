@@ -18,7 +18,7 @@ namespace MyWebProject.Models
         public DbSet<Course> Courses { get; set; }
         public DbSet<Gender> Genders { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
-        public DbSet<Register> Registers { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<Login> Logins { get; set; }
     }
 }

@@ -241,6 +241,10 @@
     <Compile Include="Migrations\202204061438595_finaltest.designer.cs">
       <DependentUpon>202204061438595_finaltest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204081511328_test3.cs" />
+    <Compile Include="Migrations\202204081511328_test3.designer.cs">
+      <DependentUpon>202204081511328_test3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CnicDetails.cs" />
     <Compile Include="Models\Course.cs" />
@@ -248,7 +252,7 @@
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\MyWebContext.cs" />
-    <Compile Include="Models\Register.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -276,7 +280,10 @@
     <Content Include="Views\Home\EEdit.cshtml" />
     <Content Include="Views\Home\CEdit.cshtml" />
     <Content Include="Views\Home\CEEdit.cshtml" />
-    <Content Include="Views\Product\RegisterPage.cshtml" />
+    <Content Include="Views\Product\Login.cshtml" />
+    <Content Include="Views\Product\View.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Product\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -311,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204061438595_finaltest.resx">
       <DependentUpon>202204061438595_finaltest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204081511328_test3.resx">
+      <DependentUpon>202204081511328_test3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
