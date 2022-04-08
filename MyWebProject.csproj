@@ -246,6 +246,7 @@
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Gender.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Models\MyWebContext.cs" />
     <Compile Include="Models\Register.cs" />
     <Compile Include="Models\Student.cs" />

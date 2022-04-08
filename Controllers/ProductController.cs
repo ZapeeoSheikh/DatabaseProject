@@ -28,5 +28,17 @@ namespace MyWebProject.Controllers
             db.SaveChanges();
             return Redirect("/Product/Register");
         }
+        public ActionResult Login()
+        {
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(Login login)
+        {
+
+            db.SaveChanges();
+            return Redirect("/Product/Login");
+        }
     }
 }
