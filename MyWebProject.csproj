@@ -249,6 +249,7 @@
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\MyWebContext.cs" />
     <Compile Include="Models\Register.cs" />
+    <Compile Include="Models\Role.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
