@@ -247,6 +247,7 @@
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\MyWebContext.cs" />
+    <Compile Include="Models\Register.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -273,6 +274,7 @@
     <Content Include="Views\Home\EEdit.cshtml" />
     <Content Include="Views\Home\CEdit.cshtml" />
     <Content Include="Views\Home\CEEdit.cshtml" />
+    <Content Include="Views\Product\RegisterPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -282,7 +284,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

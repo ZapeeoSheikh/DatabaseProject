@@ -15,6 +15,18 @@ namespace MyWebProject.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public ActionResult Register()
+        {
 
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Register(Register register)
+        {
+
+            db.SaveChanges();
+            return Redirect("/Product/Register");
+        }
     }
 }
