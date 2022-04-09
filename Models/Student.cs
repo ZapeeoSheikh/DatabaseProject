@@ -16,15 +16,3 @@ namespace MyWebProject.Models
 }
 
 
-
-
-
-//Add Navigation(add links to all pages)
-
-//Home / Index(empty)
-//Home / Students
-
-//Home / CNICDetails
-//Home / Courses
-//Home / Genders
-//Home / Enrollments

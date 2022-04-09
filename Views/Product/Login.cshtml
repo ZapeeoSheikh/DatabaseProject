@@ -1,7 +1,30 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Login";
 }
 
-<h2>Login</h2>
+<h2>Login Here</h2>
 
+<div class="container col-lg-3 col-lg-push-4">
+    <div class=" panel panel-primary">
+        <div class="panel-heading">
+            Welcome Back!
+        </div>
+        <div class="panel-body">
+            @if (ViewBag.Error != "")
+            {
+                <p style="color: red">@ViewBag.Error</p>
+            }
+            <form action="/Product/Login" method="post">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" name="Email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

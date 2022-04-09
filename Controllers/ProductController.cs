@@ -25,23 +25,43 @@ namespace MyWebProject.Controllers
         [HttpPost]
         public ActionResult Register(User user)
         {
-            user.RoleId = 2;
+            user.RoleId = 1;
             user.AccessToken = DateTime.UtcNow.Ticks.ToString();
             db.Users.Add(user);
             db.SaveChanges();
-            return Redirect("/Product/Index");
+
+
+
+            HttpCookie myCookie = new HttpCookie("userCookie");
+            myCookie.Value = user.AccessToken;
+            myCookie.Expires = DateTime.UtcNow.AddDays(5).AddHours(5);
+            Response.Cookies.Remove("userCookie");
+            Response.Cookies.Add(myCookie);
+            return Redirect("/Product/Login");
         }
+
         [HttpGet]
         public ActionResult Login()
         {
-
             return View();
         }
-        [HttpPost]
-        public ActionResult Login(Login login)
-        {
 
-            return Redirect("/Product/Login");
+        [HttpPost]
+        public ActionResult Login(User user)
+        {
+            //goes to =>
+            User dbuser = db.Users.Where(m => m.Email == user.Email && m.Password == user.Password).FirstOrDefault();
+            if (dbuser == null)
+            {
+                ViewBag.Error = "Your email or password is incorrect";
+                return View();
+            }
+            HttpCookie mycookie = new HttpCookie("userCookie");
+            mycookie.Value = dbuser.AccessToken;
+            mycookie.Expires = DateTime.UtcNow.AddDays(5).AddHours(5);
+            Response.Cookies.Remove("userCookie");
+            Response.Cookies.Add(mycookie);
+            return Redirect("/Home/Index");
         }
     }
 }

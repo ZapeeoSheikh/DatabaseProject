@@ -1,7 +1,10 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
+﻿@using MyWebProject.Models
+@model List<User>
+
 
 <h2>Index</h2>
 
+@*@foreach (var i in Model)
+    {
+        <p> @i.Name @i.Email @i.Password @i.Id</p>
+    }*@

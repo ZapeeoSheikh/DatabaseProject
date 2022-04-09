@@ -245,12 +245,19 @@
     <Compile Include="Migrations\202204081511328_test3.designer.cs">
       <DependentUpon>202204081511328_test3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204081542339_update.cs" />
+    <Compile Include="Migrations\202204081542339_update.designer.cs">
+      <DependentUpon>202204081542339_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204090734217_test4.cs" />
+    <Compile Include="Migrations\202204090734217_test4.designer.cs">
+      <DependentUpon>202204090734217_test4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CnicDetails.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Gender.cs" />
-    <Compile Include="Models\Login.cs" />
     <Compile Include="Models\MyWebContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Role.cs" />
@@ -281,7 +288,6 @@
     <Content Include="Views\Home\CEdit.cshtml" />
     <Content Include="Views\Home\CEEdit.cshtml" />
     <Content Include="Views\Product\Login.cshtml" />
-    <Content Include="Views\Product\View.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Product\Register.cshtml" />
     <None Include="Web.Debug.config">
@@ -321,6 +327,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204081511328_test3.resx">
       <DependentUpon>202204081511328_test3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204081542339_update.resx">
+      <DependentUpon>202204081542339_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204090734217_test4.resx">
+      <DependentUpon>202204090734217_test4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
