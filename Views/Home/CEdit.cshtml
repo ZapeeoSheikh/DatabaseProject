@@ -12,7 +12,7 @@
         </div>
         <div class="panel-body ">
             <form action="/Home/CEdit" method="post">
-                <input type="hidden" value="@Model.Id">
+                <input type="hidden" name="Id" value="@Model.Id">
                 <div class="form-group">
                     <label for="email"> Course Title :</label>
                     <input type="text" class="form-control" id="email" name="Title" value="@Model.Title">
@@ -27,7 +27,7 @@
                 </div>
 
 
-                <button type="submit" class="btn btn-primary">Add Now</button>
+                <button type="submit" class="btn btn-primary">Edit Now</button>
             </form>
         </div>
     </div>

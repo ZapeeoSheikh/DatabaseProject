@@ -12,7 +12,7 @@
         </div>
         <div class="panel-body ">
             <form action="/Home/CEEdit" method="post">
-                <input type="hidden" value="@Model.Id">
+                <input type="hidden" name="Id" value="@Model.Id">
                 <div class="form-group">
                     <label for="semail"> Student Id :</label>
                     <input type="text" class="form-control" id="semail" name="StudentId" value="@Model.StudentId">

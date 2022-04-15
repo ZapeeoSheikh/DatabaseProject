@@ -130,7 +130,6 @@ namespace MyWebProject.Controllers
             dbenrollment.JoinOndate = enrollment.JoinOndate;
             dbenrollment.CourseId = enrollment.CourseId;
             dbenrollment.StudentId = enrollment.StudentId;
-
             db.SaveChanges();
             return Redirect("/Home/Enrollment");
         }
