@@ -24,9 +24,9 @@
         </tr>
     </thead>
 
-    @foreach (var item in Model)
-    {
-        <tbody>
+    <tbody>
+        @foreach (var item in Model)
+        {
             <tr>
                 <td>
                     @item.Id
@@ -43,8 +43,8 @@
                     <a href="/Home/GDelete/@item.Id"><span class="glyphicon glyphicon-trash"></span></a>
                 </td>
             </tr>
-        </tbody>
-    }
+        }
+    </tbody>
 
 
 

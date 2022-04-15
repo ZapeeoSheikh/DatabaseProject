@@ -288,7 +288,6 @@
     <Content Include="Views\Home\CEdit.cshtml" />
     <Content Include="Views\Home\CEEdit.cshtml" />
     <Content Include="Views\Product\Login.cshtml" />
-    <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Product\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -12,10 +12,7 @@ namespace MyWebProject.Controllers
     {
         MyWebContext db = new MyWebContext();
         // GET: Product
-        public ActionResult Index()
-        {
-            return View();
-        }
+
         [HttpGet]
         public ActionResult Register()
         {
