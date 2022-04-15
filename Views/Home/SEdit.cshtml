@@ -1,7 +1,7 @@
 ﻿@using MyWebProject.Models
 @model Student
 
-<h2>SEdit</h2>
+<h2>Student Edit</h2>
 
 
 
@@ -12,14 +12,14 @@
         </div>
         <div class="panel-body ">
             <form action="/Home/SEdit" method="post">
-                <input type="hidden" value="@Model.Id">
+                <input type="hidden" name="Id" value="@Model.Id">
                 <div class="form-group">
                     <label for="email"> Name :</label>
                     <input type="text" class="form-control" id="email" name="Name" value="@Model.Name">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email :</label>
-                    <input type="email" class="form-control" id="email" name="Email" value="@Model.Email">
+                    <label for="eemail">Email :</label>
+                    <input type="email" class="form-control" id="eemail" name="Email" value="@Model.Email">
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone :</label>

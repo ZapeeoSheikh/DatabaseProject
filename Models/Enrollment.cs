@@ -15,6 +15,6 @@ namespace MyWebProject.Models
 
         public virtual Course Course { get; set; }
         public int CourseId { get; set; }
-        public string JoinOndate { get; set; }
+        public DateTime JoinOndate { get; set; }
     }
 }

@@ -12,10 +12,10 @@
         </div>
         <div class="panel-body ">
             <form action="/Home/EEdit" method="post">
-                <input type="hidden" value="@Model.Id">
+                <input type="hidden" name="Id" value="@Model.Id">
                 <div class="form-group">
                     <label for="email"> Joining Date :</label>
-                    <input type="text" class="form-control" id="email" name="JoinOndate" value="@Model.JoinOndate">
+                    <input type="datetime-local" class="form-control" id="email" name="JoinOndate" value="@Model.JoinOndate">
                 </div>
                 <div class="form-group">
                     <label for="email"> Course Id :</label>

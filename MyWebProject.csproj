@@ -253,6 +253,10 @@
     <Compile Include="Migrations\202204090734217_test4.designer.cs">
       <DependentUpon>202204090734217_test4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204152247251_atest.cs" />
+    <Compile Include="Migrations\202204152247251_atest.designer.cs">
+      <DependentUpon>202204152247251_atest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CnicDetails.cs" />
     <Compile Include="Models\Course.cs" />
@@ -332,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204090734217_test4.resx">
       <DependentUpon>202204090734217_test4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204152247251_atest.resx">
+      <DependentUpon>202204152247251_atest.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

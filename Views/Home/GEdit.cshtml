@@ -12,14 +12,14 @@
         </div>
         <div class="panel-body ">
             <form action="/Home/GEdit" method="post">
-                <input type="hidden" value="@Model.Id">
+                <input type="hidden" name="Id" value="@Model.Id" />
                 <div class="form-group">
                     <label for="email"> Name :</label>
                     <input type="text" class="form-control" id="email" name="Name" value="@Model.Name">
                 </div>
                 <div class="form-group">
                     <label for="email">Gender :</label>
-                    <input type="text" class="form-control" id="email" name="Email" value="@Model.Genderr">
+                    <input type="text" class="form-control" id="email" name="Genderr" value="@Model.Genderr">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Edit Now</button>
