@@ -11,5 +11,6 @@ namespace MyWebProject.Models
         public string Name { get; set; }
         public string Genderr { get; set; }
 
+
     }
 }
