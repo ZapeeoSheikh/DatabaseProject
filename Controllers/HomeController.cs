@@ -178,7 +178,7 @@ namespace MyWebProject.Controllers
             return View(students);
         }
         [HttpPost]
-        public ActionResult Students(Student student)
+        public ActionResult Students(Student student)  // New Student Passed and redirected to the student table page 
         {
             db.Students.Add(student);
             db.SaveChanges();
